@@ -5,7 +5,6 @@ import dotenv from 'dotenv'
 import bodyParser from 'body-parser'
 
 import authRoutes from './routes/auth.js'
-import aliyunRoutes from './routes/aliyun.js'
 import commodityRoutes from './routes/commodity.js'
 
 // config
@@ -21,7 +20,6 @@ app.use(bodyParser.urlencoded({limit: '30mb', extended: true}))
 
 // routes
 app.use('/api/v1/auth', authRoutes)
-app.use('/api/v1/aliyun', aliyunRoutes)
 app.use('/api/v1/commodity', commodityRoutes)
 
 // mongodb

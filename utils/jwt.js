@@ -4,7 +4,7 @@ export const signAccessToken = userId => new Promise((resolve, reject) => {
   const payload = {}
   const secret = process.env.ACCESS_TOKEN_SECRET
   const options = {
-    expiresIn: '4h',
+    expiresIn: '15s',
     audience: userId.toString()
   }
 
